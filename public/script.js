@@ -1,8 +1,9 @@
 const socket = io('/')
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
-    host: 'gagan-video.herokuapp.com/',
-    port: location.port || 1222
+    host: 'https://gagan-video.herokuapp.com/',
+    port: 1222,
+    path: '/'
 })
 const myVideo = document.createElement('video')
 myVideo.muted = true
